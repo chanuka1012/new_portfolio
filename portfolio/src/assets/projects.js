@@ -63,7 +63,7 @@ export const projects = [
       "HTML",
       "CSS",
     ],
-    demoLink: "https://new-portfolio-psi-beryl.vercel.app//",
+    demoLink: "https://new-portfolio-one-alpha-43.vercel.app/",
     codeLink: "https://github.com/chanuka1012/new_portfolio.git",
   },
 ];
