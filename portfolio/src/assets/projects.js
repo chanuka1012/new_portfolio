@@ -3,6 +3,7 @@ import spotifyImg from "../assets/spotify.png";
 import moneyImg from "../assets/money.png";
 import weatherImg from "../assets/weather.png";
 
+
 export const projects = [
   
   {
@@ -16,8 +17,8 @@ export const projects = [
       "JavaScript",
       "Tailwind CSS",
     ],
-    //demoLink: "https://fetch-me-home-front-end.vercel.app/",
-    //codeLink: "https://github.com/chamithsandeepa/Fetch_Me_Home_FrontEnd.git",
+    demoLink: "https://new-spotify-clone-eight.vercel.app/",
+    codeLink: "https://github.com/chanuka1012/New_Spotify_Clone.git",
   },
   {
     id: 2,
@@ -46,19 +47,21 @@ export const projects = [
       "JavaScript",
       "Location-based API",
     ],
-    //demoLink: "https://real-estate-frontend-chi.vercel.app/",
-    //codeLink: "https://github.com/chamithsandeepa/Real-Estate-Frontend.git",
+    demoLink: "https://weather-app-frontend-azure.vercel.app/",
+    codeLink: "https://github.com/chanuka1012/Weather-app_frontend.git",
   },
   {
     id: 4,
-    title: "Spotify_Clone Music Website",
+    title: "My Personal Blog",
     description:
-      "A responsive music streaming web app with features like album browsing and an interactive music player. It offers a smooth, user-friendly interface and helped me improve my skills in UI design and front-end development.",
-    image: spotifyImg,
+      "A personal portfolio site highlighting my projects, skills, and experience. Developed using HTML, CSS, and JavaScript with a focus on a clean, responsive design.",
+    image: blogImg,
     technologies: [
       "React.js",
       "JavaScript",
       "Tailwind CSS",
+      "HTML",
+      "CSS",
     ],
     //demoLink: "https://real-estate-frontend-chi.vercel.app/",
     //codeLink: "https://github.com/chamithsandeepa/Real-Estate-Frontend.git",

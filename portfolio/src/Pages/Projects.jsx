@@ -1,4 +1,3 @@
-// src/Pages/Projects.jsx
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
@@ -156,7 +155,7 @@ const Projects = () => {
                     <div className="flex space-x-4">
                       {project.demoLink && project.demoLink !== "N/A" ? (
                         <a
-                          //href={project.demoLink}
+                          href={project.demoLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-200 hover:text-white flex items-center gap-1 transition-colors duration-200"
@@ -173,7 +172,7 @@ const Projects = () => {
                         </span>
                       )}
                       <a
-                        //href={project.codeLink}
+                        href={project.codeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-200 hover:text-white flex items-center gap-1 transition-colors duration-200"
