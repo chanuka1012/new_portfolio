@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Circle } from "rc-progress"; // install with: npm install rc-progress
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -10,11 +9,11 @@ const Skills = () => {
     { name: "JavaScript", category: "frontend", proficiency: 80 },
     { name: "React", category: "frontend", proficiency: 80 },
     { name: "Tailwind CSS", category: "frontend", proficiency: 70 },
-    { name: "Kotlin", category: "frontend", proficiency: 75 },
-    { name: "Spring boot", category: "backend", proficiency: 80 },
+    { name: "Spring Boot", category: "backend", proficiency: 80 },
     { name: "Java", category: "backend", proficiency: 80 },
     { name: "MongoDB", category: "backend", proficiency: 70 },
     { name: "Git/GitHub", category: "tools", proficiency: 85 },
+    { name: "Kotlin", category: "frontend", proficiency: 75 },
     { name: "VS Code", category: "tools", proficiency: 95 },
     { name: "Android Studio", category: "tools", proficiency: 65 },
   ];
@@ -24,32 +23,24 @@ const Skills = () => {
       ? skills
       : skills.filter((skill) => skill.category === activeTab);
 
-  const tabs = ["all", "frontend", "backend", "tools"];
-
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-black to-gray-900 text-white">
+    <section id="skills" className="py-20 bg-black">
       <div className="container mx-auto px-6">
-        <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-4xl font-bold mb-2">
-            My <span className="text-blue-400">Skills</span>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">
+            My <span className="text-blue-900">Skills</span>
           </h2>
-          <p className="text-gray-400">Technologies I'm good at</p>
-        </motion.div>
+        </div>
 
-        <div className="flex justify-center mb-10">
-          <div className="flex flex-wrap gap-4 bg-gray-800 p-2 rounded-full">
-            {tabs.map((tab) => (
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex bg-gray-900/50 p-1 rounded-full">
+            {["all", "frontend", "backend", "tools"].map((tab) => (
               <button
                 key={tab}
-                className={`px-5 py-2 rounded-full transition ${
+                className={`py-1.5 px-4 text-sm rounded-full transition-all duration-300 ${
                   activeTab === tab
                     ? "bg-blue-500 text-white"
-                    : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+                    : "text-gray-300 hover:text-white"
                 }`}
                 onClick={() => setActiveTab(tab)}
               >
@@ -59,30 +50,24 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {filteredSkills.map((skill, idx) => (
-            <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-gray-700 shadow-md"
-            >
-              <div className="flex flex-col items-center">
-                <Circle
-                  percent={skill.proficiency}
-                  strokeWidth={8}
-                  strokeColor="#3B82F6"
-                  trailWidth={8}
-                  trailColor="#374151"
-                  className="w-24 h-24 mb-4"
-                />
-                <h4 className="text-xl font-semibold">{skill.name}</h4>
-                <p className="text-gray-400 text-sm capitalize mt-1">
-                  {skill.category}
-                </p>
+        <div className="space-y-4 max-w-2xl mx-auto">
+          {filteredSkills.map((skill) => (
+            <div key={skill.name}>
+              <div className="flex justify-between mb-1">
+                <span className="text-sm text-white">{skill.name}</span>
+                <span className="text-sm text-gray-400">
+                  {skill.proficiency}%
+                </span>
               </div>
-            </motion.div>
+              <div className="w-full bg-gray-700 rounded-full h-1.5">
+                <motion.div
+                  className="bg-blue-300 h-1.5 rounded-full"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${skill.proficiency}%` }}
+                  transition={{ duration: 0.8 }}
+                />
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -91,4 +76,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
