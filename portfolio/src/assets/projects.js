@@ -2,7 +2,7 @@ import blogImg from "../assets/blog.png";
 import spotifyImg from "../assets/spotify.png";
 import moneyImg from "../assets/money.png";
 import weatherImg from "../assets/weather.png";
-import blogImg from "../assets/blog.png";
+
 
 export const projects = [
   
@@ -17,8 +17,8 @@ export const projects = [
       "JavaScript",
       "Tailwind CSS",
     ],
-    //demoLink: "https://fetch-me-home-front-end.vercel.app/",
-    //codeLink: "https://github.com/chamithsandeepa/Fetch_Me_Home_FrontEnd.git",
+    demoLink: "https://new-spotify-clone-eight.vercel.app/",
+    codeLink: "https://github.com/chanuka1012/New_Spotify_Clone.git",
   },
   {
     id: 2,
@@ -47,8 +47,8 @@ export const projects = [
       "JavaScript",
       "Location-based API",
     ],
-    //demoLink: "https://weather-app-frontend-azure.vercel.app/",
-    //codeLink: "https://github.com/chanuka1012/Weather-app_frontend.git",
+    demoLink: "https://weather-app-frontend-azure.vercel.app/",
+    codeLink: "https://github.com/chanuka1012/Weather-app_frontend.git",
   },
   {
     id: 4,
