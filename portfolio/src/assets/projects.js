@@ -1,0 +1,66 @@
+import blogImg from "../assets/blog.png";
+import spotifyImg from "../assets/spotify.png";
+import moneyImg from "../assets/money.png";
+import weatherImg from "../assets/weather.png";
+
+export const projects = [
+  
+  {
+    id: 1,
+    title: "Spotify_Clone Music Website",
+    description:
+      "A responsive music streaming web app with features like album browsing and an interactive music player. It offers a smooth, user-friendly interface and helped me improve my skills in UI design and front-end development.",
+    image: spotifyImg,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+    ],
+    //demoLink: "https://fetch-me-home-front-end.vercel.app/",
+    //codeLink: "https://github.com/chamithsandeepa/Fetch_Me_Home_FrontEnd.git",
+  },
+  {
+    id: 2,
+    title: "💰 Money Manager Application",
+    description:
+      "  A user-friendly app that helps individuals track their daily income and expenses. Key features include adding income and expenses, viewing detailed financial reports, deleting entries, and secure user login with personalized data. This project enhanced my skills in full-stack development and real-world project handling. ",
+    image: moneyImg,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Spring Boot",
+      "Java",
+      "MongoDB"
+    ],
+    //demoLink: "https://netflix-clone-frontend-hiup.vercel.app/",
+    //codeLink: "https://github.com/chamithsandeepa/Netflix_Clone_Frontend.git",
+  },
+  {
+    id: 3,
+    title: "Weather App",
+    description:
+      "This web app allows users to check real-time temperature, humidity, and wind speed for any city worldwide through a simple and user-friendly interface. The project helped me improve my development and project management skills.",
+    image: weatherImg,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Location-based API",
+    ],
+    //demoLink: "https://real-estate-frontend-chi.vercel.app/",
+    //codeLink: "https://github.com/chamithsandeepa/Real-Estate-Frontend.git",
+  },
+  {
+    id: 4,
+    title: "Spotify_Clone Music Website",
+    description:
+      "A responsive music streaming web app with features like album browsing and an interactive music player. It offers a smooth, user-friendly interface and helped me improve my skills in UI design and front-end development.",
+    image: spotifyImg,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+    ],
+    //demoLink: "https://real-estate-frontend-chi.vercel.app/",
+    //codeLink: "https://github.com/chamithsandeepa/Real-Estate-Frontend.git",
+  },
+];
