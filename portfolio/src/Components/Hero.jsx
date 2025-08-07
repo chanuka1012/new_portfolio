@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import meImage from "../assets/my_photo.png";
+import meImage from "../assets/my.png";
 import { ChevronDown } from "lucide-react"; // Lucide icon import
 
 const Hero = () => {

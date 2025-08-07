@@ -4,6 +4,10 @@ import React from 'react'
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
+import About from './Pages/About';
+import Skills from './Pages/Skills';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 
 const App = () => {
   return (
@@ -13,6 +17,18 @@ const App = () => {
          <section id="home">
           <Hero/>
          </section>
+         <section id="about">
+          <About/>
+         </section>
+         <section id="skills">
+          <Skills/>
+        </section>
+        <section id="projects">
+          <Projects/>
+        </section>
+        <section id="contact">
+          <Contact/>
+        </section>
        </div>
        <Footer/>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { m, motion } from "framer-motion";
 import { Zap, LayoutDashboard, Smartphone, Download } from "lucide-react";
-import mycv from "../assets/CV.pdf";
+import mycv from "../assets/chanukaCV.pdf";
 
 const About = () => {
   const containerVariants = {
@@ -41,7 +41,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            About <span className="text-blue-400">Me</span>
+            About <span className="text-blue-800">Me</span>
           </h2>
         </motion.div>
 
@@ -76,14 +76,14 @@ const About = () => {
             <div className="flex justify-center lg:justify-start space-x-4">
               <button
                 onClick={scrollToContact}
-                className="bg-blue-500 hover:bg-plue-600 text-white py-2 px-6 rounded-full transition-colors duration-300"
+                className="bg-blue-600 hover:bg-plue-600 text-white py-2 px-6 rounded-full transition-colors duration-300"
               >
                 Get In Touch
               </button>
               <a
                 href={mycv}
                 download
-                className="border border-gray-600 hover:border-blue-400 text-white py-2 px-6 rounded-full transition-colors duration-300 flex items-center"
+                className="border border-gray-600 hover:border-blue-600 text-white py-2 px-6 rounded-full transition-colors duration-300 flex items-center"
               >
                 Download CV
                 <Download className="ml-2 w-4 h-4" />
@@ -101,13 +101,13 @@ const About = () => {
             <div className="grid grid-cols-1 gap-6">
               {[
                 {
-                  icon: <Zap className="w-6 h-6 text-blue-500" />,
+                  icon: <Zap className="w-6 h-6 text-blue-700" />,
                   title: "Web Development",
                   desc: "Creating responsive websites and web applications using modern frameworks.",
                   bg: "bg-blue-500/20",
                 },
                 {
-                  icon: <Smartphone className="w-6 h-6 text-blue-500" />,
+                  icon: <Smartphone className="w-6 h-6 text-blue-700" />,
                   title: "Mobile App Development",
                   desc: "Building intuitive and high-performance mobile apps for Android and iOS platforms.",
                   bg: "bg-blue-500/20",
