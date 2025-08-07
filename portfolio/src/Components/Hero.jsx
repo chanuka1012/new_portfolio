@@ -20,7 +20,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.8 }}
             >
-              Hi, I'm <span className="text-blue-400">Chanuka</span> Sandeepa
+              Hi, I'm <span className="text-blue-800">Chanuka</span> Sandeepa
             </motion.h1>
 
             <motion.p
@@ -46,7 +46,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <a href="#projects">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full font-medium transition-colors duration-300">
+                <button className="bg-blue-600 hover:bg-blue-800 text-white py-3 px-8 rounded-full font-medium transition-colors duration-300">
                   View My Work
                 </button>
               </a>
