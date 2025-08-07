@@ -2,7 +2,7 @@ import blogImg from "../assets/blog.png";
 import spotifyImg from "../assets/spotify.png";
 import moneyImg from "../assets/money.png";
 import weatherImg from "../assets/weather.png";
-
+import quizImg from "../assets/quiz.png";
 
 export const projects = [
   
@@ -65,5 +65,19 @@ export const projects = [
     ],
     demoLink: "https://new-portfolio-one-alpha-43.vercel.app/",
     codeLink: "https://github.com/chanuka1012/new_portfolio.git",
+  },
+  {
+    id: 5,
+    title: "Quiz App",
+    description:
+      "A small quiz app featuring important facts about Sri Lanka. We can customize the number of questions and change the questions as we like",
+    image: quizImg,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "CSS",
+    ],
+    demoLink: "https://quiz-app-lilac-delta-74.vercel.app/",
+    codeLink: "https://github.com/chanuka1012/quiz_app.git",
   },
 ];

@@ -19,64 +19,62 @@ const Projects = () => {
       nextProject();
     }, 5000);
     return () => clearInterval(interval);
-  }, []); // Removed current from dependency array
+  }, []);
 
   const getPosition = (index) => {
     const total = projects.length;
 
-    // Handle case when there are less than 3 projects
     if (total < 3) {
-      if (index === current) return "center";
-      return "hidden";
+      return index === current ? "center" : "hidden";
     }
 
-    // Current project is always center
     if (index === current) return "center";
 
-    // Calculate left position (previous project)
     const leftIndex = current === 0 ? total - 1 : current - 1;
-    if (index === leftIndex) return "left";
-
-    // Calculate right position (next project)
     const rightIndex = current === total - 1 ? 0 : current + 1;
+
+    if (index === leftIndex) return "left";
     if (index === rightIndex) return "right";
 
-    // All other projects are hidden
     return "hidden";
   };
 
   const variants = {
     center: {
-      x: 0,
+      rotateY: 0,
       scale: 1,
       opacity: 1,
+      x: "0%",
       zIndex: 10,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.7, ease: "easeInOut" },
       pointerEvents: "auto",
     },
     left: {
-      x: -300,
+      rotateY: 60,
       scale: 0.85,
-      opacity: 0.5,
+      opacity: 0.4,
+      x: "-60%",
       zIndex: 5,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.7, ease: "easeInOut" },
       pointerEvents: "none",
     },
     right: {
-      x: 300,
+      rotateY: -60,
       scale: 0.85,
-      opacity: 0.5,
+      opacity: 0.4,
+      x: "60%",
       zIndex: 5,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.7, ease: "easeInOut" },
       pointerEvents: "none",
     },
     hidden: {
-      x: 0,
       opacity: 0,
       scale: 0,
+      x: 0,
+      rotateY: 0,
       zIndex: 0,
-      pointerEvents: "none",
       transition: { duration: 0.5 },
+      pointerEvents: "none",
     },
   };
 
@@ -94,8 +92,8 @@ const Projects = () => {
             Featured <span className="text-blue-300">Projects</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Here are some of my recent projects. Each one was built with
-            performance, clarity, and experience in mind.
+            These are some of my latest projects, designed with a focus on
+             performance, simplicity, and user experience.
           </p>
         </motion.div>
 
@@ -108,13 +106,13 @@ const Projects = () => {
             <ArrowLeft className="w-6 h-6" />
           </button>
 
-          <div className="w-full max-w-6xl h-[500px] relative overflow-visible flex justify-center">
+          <div className="w-full max-w-6xl h-[500px] relative overflow-visible flex justify-center perspective-[1000px]">
             {projects.map((project, index) => {
               const position = getPosition(index);
               return (
                 <motion.div
                   key={project.id}
-                  className="absolute w-96 bg-gray-900/90 rounded-xl overflow-hidden border border-gray-800 shadow-lg"
+                  className="absolute w-96 bg-gray-900/90 rounded-xl overflow-hidden border border-gray-800 shadow-xl"
                   variants={variants}
                   initial="hidden"
                   animate={position}

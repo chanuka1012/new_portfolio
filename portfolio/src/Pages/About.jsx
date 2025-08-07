@@ -76,7 +76,7 @@ const About = () => {
             <div className="flex justify-center lg:justify-start space-x-4">
               <button
                 onClick={scrollToContact}
-                className="bg-blue-600 hover:bg-plue-600 text-white py-2 px-6 rounded-full transition-colors duration-300"
+                className="bg-blue-300 hover:bg-plue-600 text-white py-2 px-6 rounded-full transition-colors duration-300"
               >
                 Get In Touch
               </button>
