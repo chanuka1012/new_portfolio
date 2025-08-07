@@ -30,11 +30,13 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              I build dynamic, end-to-end web applications using modern full
-              stack technologies. From crafting seamless user experiences on the
-              front end to architecting robust, scalable back-end systems, I’m
-              passionate about delivering performant, clean, and maintainable
-              solutions that make a real impact.
+              I build dynamic, end-to-end web applications using 
+              modern and powerful full stack technologies. From 
+              crafting seamless and engaging user experiences on 
+              the front end to architecting robust, secure, and 
+              scalable back-end systems, I’m deeply passionate about
+               delivering high-performing, clean, maintainable, and 
+               reliable solutions that create a real, lasting impact.
             </motion.p>
 
             <motion.div
