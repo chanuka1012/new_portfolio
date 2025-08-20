@@ -1,7 +1,7 @@
 import React from "react";
 import { m, motion } from "framer-motion";
 import { Zap, LayoutDashboard, Smartphone, Download } from "lucide-react";
-import mycv from "../assets/chanukaCV02.pdf";
+import mycv from "../assets/my_new_cv.pdf";
 
 const About = () => {
   const containerVariants = {
