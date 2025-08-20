@@ -1,7 +1,7 @@
 import React from "react";
 import { m, motion } from "framer-motion";
 import { Zap, LayoutDashboard, Smartphone, Download } from "lucide-react";
-import mycv from "../assets/my_new_cv01.pdf";
+import mycv from "../assets/my_new_cv02.pdf";
 
 const About = () => {
   const containerVariants = {
