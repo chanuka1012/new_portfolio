@@ -20,7 +20,7 @@ const Hero = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              Hi, I'm <span className="bg-gradient-to-r from-blue-300 to-blue-900 text-transparent bg-clip-text">Chanuka Sandeepa</span>
+              Hi, I'm <span className="bg-gradient-to-r from-blue-300 to-blue-900 text-transparent bg-clip-text">Chanuka Rathnayake</span>
             </motion.h1>
 
             <motion.p
