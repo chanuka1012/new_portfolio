@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import meImage from "../assets/my_photo1.png";
+import meImage from "../assets/WhatsApp_Image_2026-05-11_at_22.53.54-removebg-preview.png";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
