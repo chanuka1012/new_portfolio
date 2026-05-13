@@ -6,16 +6,21 @@ const Skills = () => {
 
   const skills = [
     { name: "HTML/CSS", category: "frontend", proficiency: 90 },
-    { name: "JavaScript", category: "frontend", proficiency: 80 },
-    { name: "React", category: "frontend", proficiency: 80 },
-    { name: "Tailwind CSS", category: "frontend", proficiency: 70 },
-    { name: "Spring Boot", category: "backend", proficiency: 80 },
-    { name: "Java", category: "backend", proficiency: 80 },
-    { name: "MongoDB", category: "backend", proficiency: 70 },
+    { name: "JavaScript", category: "frontend", proficiency: 90 },
+    { name: "React", category: "frontend", proficiency: 90 },
+    { name: "Tailwind CSS", category: "frontend", proficiency: 85 },
+    { name: "Spring Boot", category: "backend", proficiency: 90 },
+    { name: "Java", category: "backend", proficiency: 90 },
+    { name: ".Net", category: "backend", proficiency: 90 },
+    { name: "c#", category: "backend", proficiency: 90 },
+    { name: "MongoDB", category: "database", proficiency: 75 },
+    { name: "SQL", category: "database", proficiency: 90 },
     { name: "Git/GitHub", category: "tools", proficiency: 85 },
+    { name: "GitHub Desktop", category: "tools", proficiency: 85 },
     { name: "Kotlin", category: "frontend", proficiency: 75 },
     { name: "VS Code", category: "tools", proficiency: 95 },
     { name: "Android Studio", category: "tools", proficiency: 65 },
+    { name: "Visual Studio", category: "tools", proficiency: 95 },
   ];
 
   const filteredSkills =
@@ -34,7 +39,7 @@ const Skills = () => {
 
         <div className="flex justify-center mb-8">
           <div className="inline-flex bg-gray-900/50 p-1 rounded-full">
-            {["all", "frontend", "backend", "tools"].map((tab) => (
+            {["all", "frontend", "backend", "tools", "database"].map((tab) => (
               <button
                 key={tab}
                 className={`py-1.5 px-4 text-sm rounded-full transition-all duration-300 ${

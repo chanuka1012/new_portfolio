@@ -54,16 +54,16 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h3 className="text-2xl font-bold mb-4 text-center lg:text-left">
-              Passionate Web Developer & UI Enthusiast
+              Passionate Full-Stack Developer 
             </h3>
             <p className="text-gray-300 mb-4 text-center lg:text-left">
-              I’m a web developer with a strong focus on building responsive,
+              I’m a full-stack developer with a strong focus on building responsive,
                user-friendly, and visually appealing websites. I specialize
                 in front-end development using modern technologies like React,
                  Tailwind CSS, and JavaScript to create clean, accessible 
                  interfaces that work smoothly across devices. On the backend, 
                  I specialize in building robust and scalable APIs using 
-                 Spring Boot and Java, ensuring seamless integration and 
+                 Spring Boot, Java, .Net and c# ensuring seamless integration and 
                  high performance.
             </p>
             <p className="text-gray-300 mb-6 text-center lg:text-left">
